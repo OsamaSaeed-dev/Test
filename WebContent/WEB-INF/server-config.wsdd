@@ -52,6 +52,7 @@
   <ns1:parameter name="wsdlTargetNamespace" value="http://service.jaxws.journaldev.com"/>
   <ns1:parameter name="wsdlServiceElement" value="PersonServiceImplService"/>
   <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns8:Person" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.journaldev.jaxws.beans.Person" xmlns:ns8="http://beans.jaxws.journaldev.com"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns9:Course" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.journaldev.jaxws.beans.Course" xmlns:ns9="http://beans.jaxws.journaldev.com"/>
  </ns1:service>
  <ns1:transport name="http">
   <ns1:requestFlow>

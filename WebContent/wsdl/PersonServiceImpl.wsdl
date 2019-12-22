@@ -59,9 +59,16 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    </element>
   </schema>
   <schema elementFormDefault="qualified" targetNamespace="http://beans.jaxws.journaldev.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="Course">
+    <sequence>
+     <element name="courseId" type="xsd:int"/>
+     <element name="name" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
    <complexType name="Person">
     <sequence>
      <element name="age" type="xsd:int"/>
+     <element name="c" nillable="true" type="tns1:Course"/>
      <element name="id" type="xsd:int"/>
      <element name="name" nillable="true" type="xsd:string"/>
     </sequence>

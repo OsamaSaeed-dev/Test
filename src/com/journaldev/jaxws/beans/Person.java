@@ -2,13 +2,26 @@ package com.journaldev.jaxws.beans;
 
 import java.io.Serializable;
 
+
 public class Person implements Serializable{
 
 	//private static final long serialVersionUID = -5577579081118070434L;
 	
+	
+
 	private String name;
 	private int age;
 	private int id;
+	private Course c ;
+	
+
+	public Course getC() {
+		return c;
+	}
+
+	public void setC(Course c) {
+		this.c = c;
+	}
 
 	public String getName() {
 		return name;
@@ -35,8 +48,8 @@ public class Person implements Serializable{
 	}
 	
 	@Override
-	public String toString(){
-		return id+"::"+name+"::"+age;
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", id=" + id + ", c=" + c + "]";
 	}
 
 }
